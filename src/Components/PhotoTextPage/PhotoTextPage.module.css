@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px; /* Пространство между элементами */
+    animation: moveTextAndPhotos 10s infinite alternate linear; /* Анимация для бегущей строки */
+  }
+  
+  @keyframes moveTextAndPhotos {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .photoColumn,
+  .textColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .photos {
+    grid-column: 1; /* Разместить фотографии в первой колонке */
+  }
+  
+  .text {
+    grid-column: 2; /* Разместить текст во второй колонке */
+  }
+  
+  .photos img {
+    width: 200px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота */
+  }
+  

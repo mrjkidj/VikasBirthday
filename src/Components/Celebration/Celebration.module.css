@@ -1,0 +1,122 @@
+@keyframes confetti {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+
+.celebrationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F8C8DC;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text {
+  background: white;
+  width: 100%;
+  max-width: 900px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.continueButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continueButton:hover {
+  background-color: #FF69B4;
+}
+
+.confetti {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: confetti 5s linear infinite;
+  opacity: 0;
+}
+
+.confetti:nth-child(1) { left: 10%; animation-delay: 0.5s; opacity: 1; }
+.confetti:nth-child(2) { left: 20%; animation-delay: 1s; opacity: 1; }
+.confetti:nth-child(3) { left: 30%; animation-delay: 1.5s; opacity: 1; }
+.confetti:nth-child(4) { left: 40%; animation-delay: 2s; opacity: 1; }
+.confetti:nth-child(5) { left: 50%; animation-delay: 2.5s; opacity: 1; }
+.confetti:nth-child(6) { left: 60%; animation-delay: 3s; opacity: 1; }
+.confetti:nth-child(7) { left: 70%; animation-delay: 3.5s; opacity: 1; }
+.confetti:nth-child(8) { left: 80%; animation-delay: 4s; opacity: 1; }
+.confetti:nth-child(9) { left: 90%; animation-delay: 4.5s; opacity: 1; }
+.confetti:nth-child(10) { left: 100%; animation-delay: 5s; opacity: 1; }
+
+@media (max-width: 812px) and (orientation: portrait) {
+  .text {
+    height: auto;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .continueButton {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .gifContainer img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  .celebrationContainer {
+    padding: 10px;
+  }
+
+  .text {
+    width: 100%;
+    max-width: none;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .continueButton {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .gifContainer img {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #F8C8DC;
+  /* background-image: url('../../Assets//img/geeks_logo.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.headerText {
+  font-family: cursive;
+  font-size: 5vw;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.buttons {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 40%;
+  max-width: 200px;
+  height: 50px;
+  background-color: deeppink;
+  color: white;
+  text-align: center;
+  font-size: 4vw;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FAF9F6;
+}
+
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#noButton {
+  position: absolute;
+  transition: 0.5s;
+}
+
+#yesButton {
+  position: absolute;
+}
