@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.248a8729.css",
+    "main.js": "/static/js/main.89b2009c.js",
+    "static/media/photoVika1.jpg": "/static/media/photoVika1.e3a22b23d7d5e93053eb.jpg",
+    "static/media/photoVika15.jpg": "/static/media/photoVika15.30d88799aa623a804897.jpg",
+    "static/media/photoVika2.jpg": "/static/media/photoVika2.4bc3e63ad0f750b5acc7.jpg",
+    "static/media/photoVika3.jpg": "/static/media/photoVika3.2a657353cd6140e4c075.jpg",
+    "static/media/photoVika8.jpg": "/static/media/photoVika8.ff095fb18402e5fbcd89.jpg",
+    "static/media/photoVika5.jpg": "/static/media/photoVika5.88cfebd54a432904c9f3.jpg",
+    "static/media/photoVika7.jpg": "/static/media/photoVika7.b9c082d05843ac3cb2aa.jpg",
+    "static/media/photoBack.jpg": "/static/media/photoBack.ee0b4caa6b75b4e20770.jpg",
+    "static/media/photoVika9.jpg": "/static/media/photoVika9.2843c2a44f80a3b11dc6.jpg",
+    "static/media/photoVika12.jpg": "/static/media/photoVika12.657a9670a8673ddf49fa.jpg",
+    "static/media/photoVika14.jpg": "/static/media/photoVika14.2175d4585492bf2cf4ce.jpg",
+    "static/media/photoVika13.jpg": "/static/media/photoVika13.8b7151e35067740dd0ed.jpg",
+    "static/media/photoVika4.jpg": "/static/media/photoVika4.10a11c98ce171f960f2d.jpg",
+    "static/media/photoVika10.jpg": "/static/media/photoVika10.cb6e842de480c2c36a84.jpg",
+    "static/media/photoVika11.jpg": "/static/media/photoVika11.1032b8aef00bdb3ec58b.jpg",
+    "static/media/photoVika6.jpg": "/static/media/photoVika6.862ec466957bb39eca9e.jpg",
+    "index.html": "/index.html",
+    "main.248a8729.css.map": "/static/css/main.248a8729.css.map",
+    "main.89b2009c.js.map": "/static/js/main.89b2009c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.248a8729.css",
+    "static/js/main.89b2009c.js"
+  ]
+}
