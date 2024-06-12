@@ -1,8 +1,8 @@
 import React from 'react';
 import photo1 from '../../Assets/img/photoVika15.jpg';
-import photo2 from '../../Assets/img/photoVika11.jpg';
-import photo3 from '../../Assets/img/photoVika9.jpg';
-import photo4 from '../../Assets/img/photoVika5.jpg';
+import photo2 from '../../Assets/img/photoVika12.jpg';
+import photo3 from '../../Assets/img/photoVika13.jpg';
+import photo4 from '../../Assets/img/photoVika14.jpg';
 import styles from './PhotoTextPage.module.css';
 
 const photosWithText = [

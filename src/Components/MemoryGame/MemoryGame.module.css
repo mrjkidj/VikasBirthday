@@ -55,11 +55,11 @@
 /* Медиа-запросы для адаптации под iPhone XS */
 @media (max-width: 1125px) {
   .cardGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .card {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
   }
 }

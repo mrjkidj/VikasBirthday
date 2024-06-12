@@ -15,44 +15,55 @@ const NextPage = () => {
     const [message, setMessage] = useState('');
     const [confetti, setConfetti] = useState([]);
     const [selectedTable, setSelectedTable] = useState('');
-
+    const [showHeart, setShowHeart] = useState(false);
+  
     const handleTableClick = (name) => {
+      setSelectedTable('');
+      setShowHeart(true);
+      setTimeout(() => {
+        setShowHeart(false);
         setSelectedTable(name);
+      }, 1500); // Время анимации сердца
     };
-
+  
     const handleButtonClick = () => {
-        navigate('/photo-text-page'); // Переход на страницу MemoryGame
+      navigate('/photo-text-page'); // Переход на страницу MemoryGame
     };
-
+  
     useEffect(() => {
-        // Generate confetti elements
-        const confettiElements = Array.from({ length: 10 }, (_, index) => (
-            <div key={index} className={styles.confetti}></div>
-        ));
-        setConfetti(confettiElements);
+      // Generate confetti elements
+      const confettiElements = Array.from({ length: 10 }, (_, index) => (
+        <div key={index} className={styles.confetti}></div>
+      ));
+      setConfetti(confettiElements);
     }, []);
-
+  
     return (
-        <div className={styles.container}>
-            {confetti}
-            <h1>ЖМАЙ!</h1>
-            <div className={styles.tables}>
-                {Object.keys(textContents).map((table, index) => (
-                    <div key={index} className={styles.table} onClick={() => handleTableClick(table)}>
-                        <p>{table}</p>
-                    </div>
-                ))}
-            </div>
-            {selectedTable && (
-                <div className={`${styles.textContainer} ${styles.show}`}>
-                    <p>{textContents[selectedTable]}</p>
-                </div>
-            )}
-            <button onClick={handleButtonClick}>почти конец и еще кое что</button>
+      <div className={styles.container}>
+        {confetti}
+        <div className={`${styles.marquee} ${styles.top}`}>
+          <span>LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE</span>
         </div>
+        <h1>ЖМАЙ!</h1>
+        <div className={styles.tables}>
+          {Object.keys(textContents).map((table, index) => (
+            <div key={index} className={styles.table} onClick={() => handleTableClick(table)}>
+              <p>{table}</p>
+            </div>
+          ))}
+        </div>
+        {showHeart && <div className={styles.heart}></div>}
+        {selectedTable && (
+          <div className={`${styles.textContainer} ${styles.show}`}>
+            <p>{textContents[selectedTable]}</p>
+          </div>
+        )}
+        <button onClick={handleButtonClick}>почти конец и еще кое что</button>
+        <div className={`${styles.marquee} ${styles.bottom}`}>
+          <span>LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE</span>
+        </div>
+      </div>
     );
-};
-
-export default NextPage;
-
-
+  };
+  
+  export default NextPage;

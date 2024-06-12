@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './BirthdayCountdown.module.css';
 
 const calculateTimeLeft = () => {
-  const difference = +new Date('2024-06-12T00:52:00') - +new Date();
+  const difference = +new Date('2024-06-12T01:42:00') - +new Date();
   let timeLeft = {};
 
   if (difference > 0) {
